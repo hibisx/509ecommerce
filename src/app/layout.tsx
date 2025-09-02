@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Jost } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Nike E-Commerce",
@@ -11,17 +9,15 @@ export const metadata: Metadata = {
 
 const jost = Jost({ variable: "--font-jost", subsets: ["latin"] });
 
-export default function RootLayout({
+export default function AppLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={`${jost.className} antialiased`}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className={`${jost.className} antialiased bg-[--color-light-100] text-[--color-dark-900]`}>
+        {children}
       </body>
     </html>
   );
