@@ -56,7 +56,7 @@ export default function Footer({
   year = new Date().getFullYear(),
 }: FooterProps) {
   return (
-    <footer className="w-full bg-[--color-dark-900] text-[--color-light-100]">
+    <footer className="w-full bg-black text-[--color-light-100]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-10 md:grid-cols-12 md:px-6 md:py-12">
         <div className="md:col-span-3">
           {showLogo && (
