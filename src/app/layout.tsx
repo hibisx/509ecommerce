@@ -4,7 +4,7 @@ import { Jost } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Nike E-Commerce",
-  description: "Nike products e-commerce store",
+  description: "Nike Shoes E-Commerce Store",
 };
 
 const jost = Jost({ variable: "--font-jost", subsets: ["latin"] });
